@@ -1,7 +1,44 @@
-* {
-	 /*???*/
+/* ----------- Setup ----------- */
+
+/** {
+	 ???
+}*/
+
+/* iPad 3 and 4, Portrait and Landscape */
+/*do I need others? test that it works*/
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
 }
+
+/* ----------- Base Styles ----------- */
 
 body {
 	font-family: 'Ubuntu', sans-serif;
+}
+
+.player {
+	height: 100px;
+	width: 100px;
+	border: 1px solid black;
+	text-align: center;
+
+}
+
+
+/* ----------- Layout ----------- */
+
+#player1{
+	background-color: red;
+
+}
+
+#player2{
+	background-color: blue;
+}
+
+#clicked {
+	margin-left: 50px;
 }
