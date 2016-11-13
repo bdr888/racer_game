@@ -1,25 +1,20 @@
-// console.log("Linked!");
-
-var player1div = document.getElementById("player1div");
-var player2div = document.getElementById("player2div");
+// var player1 = document.getElementById("player1");
+// var player2 = document.getElementById("player2");
 var counter1 = 0;
 var counter2 = 0;
-x = 10;
 document.onkeydown = checkKey;
-// var percentToMove1 = (counter1 * 10);
-// var percentToMove2 = (counter2 * 10);
 
-
-// first to 10 keystrokes (100% margin-left)
-// reset counters and margins
+// checks for first to 9 keystrokes (increments by 10)
+// alerts winner
+// resets counters and margins
 function checkWin() {
-	if (counter1 === 100) {
+	if (counter1 === 90) {
 		alert("Player 1 wins!");
 		counter1 = 0;
 		counter2 = 0;
 		player1.style.marginLeft = "10px";
 		player2.style.marginLeft = "10px";
-	} else if (counter2 === 100) {
+	} else if (counter2 === 90) {
 		alert("Player 2 wins!");
 		counter1 = 0;
 		counter2 = 0;
@@ -29,33 +24,37 @@ function checkWin() {
 }
 
 // listen to keys, 
-// increment key counter, 
+// increment key counter by 10, 
 // add 10% margin-left to corresponding div, 
-// check for win (margin-left = 100%). 
+// calls check for win function. 
 function checkKey(e) {
 
     page = e || window.event;
 
     if (page.keyCode === 39) {
         // right arrow - player 1
-        // console.log("checked right arrow!");
         counter1 +=10;
-        console.log("player 1 has moved " + counter1 + " times");
         player1.style.marginLeft = "+" + counter1 + "%";
-		console.log("added " + counter1 + " % margin");
+		console.log("Player 1 has moved " + counter1/10 + " times. Margin = " + counter1 + " %.");
 		checkWin();
     }
     else if (page.keyCode === 70) {
         // "f" player 2
-        // console.log("checked f key!");
         counter2 +=10;
-        console.log("player 2 has moved " + counter2 + " times");
-        player2div.setAttribute("class", "clicked");
         player2.style.marginLeft = "+" + counter2 + "%";
-        console.log("added " + counter2 + " % margin");
+		console.log("Player 2 has moved " + counter2/10 + " times. Margin = " + counter2 + " %.");
         checkWin();
     }
 }
+
+// function reset() {
+// 	var reset = document.getElementById("reset").on("click", function() {
+// 		counter1 = 0;
+// 		counter2 = 0;
+// 		player1.style.marginLeft = "10px";
+// 		player2.style.marginLeft = "10px";
+// 	});
+
 
 // ok // Your game should have two pages: a landing page and a game page
 // ok // Include separate HTML, CSS, JavaScript files
