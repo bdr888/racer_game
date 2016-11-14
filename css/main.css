@@ -81,9 +81,12 @@ a:hover {
 	padding: 10px;
 	margin: 10px;
 	text-align: center;
+	transition: all .5s ease;
 }
 
-#player1{
+
+
+#player1 {
 	background: url("../assets/sen running 2.png") no-repeat center;
 
 }
@@ -97,6 +100,11 @@ a:hover {
 .landingPage {
 	background-image: url("../assets/landingpage.png");
 	background-size: cover;
+}
+
+.headerBorder {
+	border-bottom: 1px solid black;
+
 }
 
 #header {
@@ -129,6 +137,10 @@ a:hover {
 	margin: auto;
 	width: 100%;
 	margin-top: 600px;
+}
+
+li:hover {
+	opacity: 20%;
 }
 
 #footerLinks{

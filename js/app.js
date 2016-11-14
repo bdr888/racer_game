@@ -1,3 +1,6 @@
+// window.onload = function () { put all code in here};
+
+
 var counter1 = 0;
 var counter2 = 0;
 document.onkeydown = checkKey;
@@ -6,13 +9,13 @@ document.onkeydown = checkKey;
 // alerts winner
 // resets counters and margins
 function checkWin() {
-	if (counter1 === 90) {
+	if (counter1 === 100) {
 		alert("Sen escapes!");
 		counter1 = 0;
 		counter2 = 0;
 		player1.style.marginLeft = "10px";
 		player2.style.marginLeft = "10px";
-	} else if (counter2 === 90) {
+	} else if (counter2 === 100) {
 		alert("No-Face wins!");
 		counter1 = 0;
 		counter2 = 0;
@@ -25,6 +28,7 @@ function checkWin() {
 // increment key counter by 10, 
 // add 10% margin-left to corresponding div, 
 // calls check for win function. 
+
 function checkKey(e) {
 
     page = e || window.event;
@@ -34,6 +38,7 @@ function checkKey(e) {
         counter1 +=10;
         player1.style.marginLeft = "+" + counter1 + "%";
 		console.log("Player 1 has moved " + counter1/10 + " times. Margin = " + counter1 + " %.");
+		player1.toggleClass("alt");
 		checkWin();
     }
     else if (page.keyCode === 70) {
