@@ -1,5 +1,3 @@
-// var player1 = document.getElementById("player1");
-// var player2 = document.getElementById("player2");
 var counter1 = 0;
 var counter2 = 0;
 document.onkeydown = checkKey;
@@ -47,20 +45,11 @@ function checkKey(e) {
     }
 }
 
-// function reset() {
-// 	var reset = document.getElementById("reset").on("click", function() {
-// 		counter1 = 0;
-// 		counter2 = 0;
-// 		player1.style.marginLeft = "10px";
-// 		player2.style.marginLeft = "10px";
-// 	});
-
-
 // ok // Your game should have two pages: a landing page and a game page
 // ok // Include separate HTML, CSS, JavaScript files
-// // Choose an existing landing page on the web; screen shot the landing page, and replicate its design to create a separate game landing page that links to your game*
+// ok // Choose an existing landing page on the web; screen shot the landing page, and replicate its design to create a separate game landing page that links to your game*
 // ok // Style your landing page and game page with class-based CSS
-// ok but need to test // Include a media query for a tablet to make your pages responsive
+// ok // Include a media query for a tablet to make your pages responsive
 
 // ok // Your game page must have at least two player objects
 // ok // Your game must have a clear win condition
