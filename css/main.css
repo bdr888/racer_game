@@ -48,6 +48,8 @@ h1 {
 	padding: 10px;
 }
 
+/* ----------- Layout ----------- */
+
 .board {
 	background: url("../assets/boardbackground.png") no-repeat center;
 	background-size: cover;
@@ -68,15 +70,6 @@ h1 {
 	padding: 10px;
 	margin: 10px;
 	text-align: center;
-
-}
-
-
-/* ----------- Layout ----------- */
-
-#landingPage {
-	background-image: url("../assets/landingpage.png");
-	background-size: cover;
 }
 
 #player1{
@@ -88,18 +81,42 @@ h1 {
 	background: url("../assets/noface2.png") no-repeat center;
 }
 
-/*Landing Page*/
+/* ----------- Landing Page ----------- */
 
+}
+
+.landingPage {
+	background-image: url("../assets/landingpage.png");
+	/*background-size: cover;*/
+}
+
+#header {
+	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 40px;
+	border-bottom: 1px solid grey;
+}
 
 .headerNav {
-	text-align: center;
-	width: 100%;
+	float: left;
+	width: 33%;
+}
 
+#navleft {
+	text-align: left;
+}
+
+#navCenter {
+	text-align: center;
+}
+
+#navRight {
+	text-align: right;
 }
 
 .footerNav {
 	clear: both;
-	/*text-align: center;*/
+	text-align: center;
 	margin: auto;
 	width: 100%;
 	margin-top: 600px;
@@ -107,12 +124,15 @@ h1 {
 
 #footerLinks{
 	float: left;
+	margin-left: 20px;
+	/*text-align: left;*/
 
 }
 
 #footerIcons {
-	float: left;
-	text-align: right;
+	float: right;
+	margin-right: 20px;
+	/*text-align: right;*/
 }
 
 .links {
