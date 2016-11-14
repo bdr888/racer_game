@@ -23,6 +23,25 @@ h1 {
 	text-align: center;
 }
 
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px;
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0;
+}
+
 .container {
 	width: 100%
 	margin: 10px;
@@ -30,11 +49,14 @@ h1 {
 }
 
 .board {
-	background: url("../assets/bath house.png") no-repeat center; 
+	background: url("../assets/boardbackground.png") no-repeat center;
+	background-size: cover;
+	height: 600px;
 }
 .playerdiv {
-	/*padding: 10px;*/
-	/*margin: 10px;*/
+	padding-top: 50px;
+	padding-bottom: 50px;
+	/*margin: top 30%;*/
 	/*width: 100%;*/
 }
 
@@ -52,6 +74,11 @@ h1 {
 
 /* ----------- Layout ----------- */
 
+#landingPage {
+	background-image: url("../assets/landingpage.png");
+	background-size: cover;
+}
+
 #player1{
 	background: url("../assets/sen running 2.png") no-repeat center;
 
@@ -59,4 +86,43 @@ h1 {
 
 #player2{
 	background: url("../assets/noface2.png") no-repeat center;
+}
+
+/*Landing Page*/
+
+
+.headerNav {
+	text-align: center;
+	width: 100%;
+
+}
+
+.footerNav {
+	clear: both;
+	/*text-align: center;*/
+	margin: auto;
+	width: 100%;
+	margin-top: 600px;
+}
+
+#footerLinks{
+	float: left;
+
+}
+
+#footerIcons {
+	float: left;
+	text-align: right;
+}
+
+.links {
+	float: left;
+	display: inline-block;
+	padding: 50px 20px 20px 0px;
+	font-size: 12px;
+}
+
+#copyright {
+	color: #d3d3d3;
+	float: left;
 }
