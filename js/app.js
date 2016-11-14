@@ -9,13 +9,13 @@ document.onkeydown = checkKey;
 // resets counters and margins
 function checkWin() {
 	if (counter1 === 90) {
-		alert("Player 1 wins!");
+		alert("Sen escapes!");
 		counter1 = 0;
 		counter2 = 0;
 		player1.style.marginLeft = "10px";
 		player2.style.marginLeft = "10px";
 	} else if (counter2 === 90) {
-		alert("Player 2 wins!");
+		alert("No-Face wins!");
 		counter1 = 0;
 		counter2 = 0;
 		player1.style.marginLeft = "10px";

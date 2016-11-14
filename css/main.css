@@ -1,7 +1,7 @@
 /* ----------- Setup ----------- */
 
 * {
-	border: 1px solid black;
+	/*border: 1px solid black;*/
 }
 
 /* iPad 3 and 4, Portrait and Landscape */
@@ -29,6 +29,9 @@ h1 {
 	padding: 10px;
 }
 
+.board {
+	background: url("../assets/bath house.png") no-repeat center; 
+}
 .playerdiv {
 	/*padding: 10px;*/
 	/*margin: 10px;*/
@@ -39,7 +42,7 @@ h1 {
 .player {
 	height: 100px;
 	width: 100px;
-	border: 1px solid black;
+	/*border: 1px solid black;*/
 	padding: 10px;
 	margin: 10px;
 	text-align: center;
@@ -50,10 +53,10 @@ h1 {
 /* ----------- Layout ----------- */
 
 #player1{
-	background-color: red;
+	background: url("../assets/sen running 2.png") no-repeat center;
 
 }
 
 #player2{
-	background-color: blue;
+	background: url("../assets/noface2.png") no-repeat center;
 }
