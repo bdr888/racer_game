@@ -23,6 +23,17 @@ h1 {
 	text-align: center;
 }
 
+a:visited, a:link, a:active
+{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+	text-decoration: none;
+	color: grey;
+}
+
 .clearfix:after {
      content: ".";
      display: block;
@@ -30,7 +41,7 @@ h1 {
      visibility: hidden;
      line-height: 0;
      height: 0;
-}
+ }
 
 .alignright {
   float: right;
@@ -83,18 +94,14 @@ h1 {
 
 /* ----------- Landing Page ----------- */
 
-}
-
 .landingPage {
 	background-image: url("../assets/landingpage.png");
-	/*background-size: cover;*/
+	background-size: cover;
 }
 
 #header {
 	width: 100%;
-	margin-top: 20px;
-	margin-bottom: 40px;
-	border-bottom: 1px solid grey;
+	margin: 20px 20px 40px 20px;
 }
 
 .headerNav {
@@ -108,6 +115,8 @@ h1 {
 
 #navCenter {
 	text-align: center;
+	font-weight: 600;
+	font-size: 24px;
 }
 
 #navRight {
